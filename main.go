@@ -4,7 +4,7 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
-	"www/loghelper"
+	"webServer/tools"
 )
 
 func init() {
@@ -51,7 +51,7 @@ func main() {
 	mux.HandleFunc("/", sayHelloName)
 	mux.HandleFunc("/p", paserParam)
 	mux.HandleFunc("/json", handleJSONRes)
-	err := http.ListenAndServe("127.0.0.1:9090", mux)
+	err := http.ListenAndServe(":9090", mux)
 	if err != nil {
 		log.Fatal("ListenAndServe: ", err)
 	}
