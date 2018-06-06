@@ -1,9 +1,6 @@
-INFO:2018/06/01 17:35:48.527092 main.go:21: request:/
-INFO:2018/06/01 17:35:57.898508 main.go:21: request:/
-INFO:2018/06/01 17:35:59.688813 main.go:21: request:/haha
-INFO:2018/06/01 17:35:59.688877 main.go:23: path:/haha
-INFO:2018/06/01 18:17:18.413281 main.go:26: request:/haha
-INFO:2018/06/01 18:17:18.413370 main.go:28: path:/haha
-INFO:2018/06/01 18:17:22.512079 main.go:26: request:/haha
-INFO:2018/06/01 18:17:22.512128 main.go:28: path:/haha
-INFO:2018/06/02 11:57:43.645990 main.go:25: request:/
+INFO:2018/06/06 20:29:33.135454 dbHelper.go:26: error:pq: syntax error at or near "info"
+INFO:2018/06/06 20:29:33.142353 dbHelper.go:26: error:pq: syntax error at or near "info"
+INFO:2018/06/06 20:29:33.149281 dbHelper.go:26: error:pq: syntax error at or near "info"
+INFO:2018/06/06 20:32:39.956213 dbHelper.go:26: error:pq: syntax error at or near "info"
+INFO:2018/06/06 20:32:39.965161 dbHelper.go:26: error:pq: syntax error at or near "info"
+INFO:2018/06/06 20:32:39.975148 dbHelper.go:26: error:pq: syntax error at or near "info"

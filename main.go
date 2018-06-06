@@ -4,6 +4,7 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
+	"webServer/db"
 	"webServer/tools"
 )
 
@@ -37,6 +38,10 @@ func handleJSONRes(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+func handleAdd(w http.ResponseWriter, r *http.Request) {
+	db.Add("djfajdfjajdf", "1237173791273179371923")
+}
+
 func load() []byte {
 	data, err := ioutil.ReadFile("EFL.json")
 	if err != nil {
@@ -51,6 +56,7 @@ func main() {
 	mux.HandleFunc("/", sayHelloName)
 	mux.HandleFunc("/p", paserParam)
 	mux.HandleFunc("/json", handleJSONRes)
+	mux.HandleFunc("/add", handleAdd)
 	err := http.ListenAndServe(":9090", mux)
 	if err != nil {
 		log.Fatal("ListenAndServe: ", err)

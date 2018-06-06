@@ -8,5 +8,6 @@
 # Test binary, build with `go test -c`
 *.test
 
-# Output of the go coverage tool, specifically when used with LiteIDE
+# Outpu
+# t of the go coverage tool, specifically when used with LiteIDE
 .DS_Store
